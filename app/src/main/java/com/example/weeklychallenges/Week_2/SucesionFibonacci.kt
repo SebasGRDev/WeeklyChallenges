@@ -17,8 +17,29 @@ package com.example.weeklychallenges.Week_2
  * - Revisaré el ejercicio en directo desde Twitch el lunes siguiente al de su publicación.
  * - Subiré una posible solución al ejercicio el lunes siguiente al de su publicación.
  *
+ * (FORMULA DE FIBONACCI: n = n-1 + n-2)
  */
 
 class SucesionFibonacci {
 
+    fun main() {
+        fibonacci()
+    }
+
+    fun fibonacci() {
+        val n = 50
+        var n1 = 0
+        var n2 = 1
+        var sum = 0
+
+        for (i in 1..n) {
+            println("$n1")
+            println("$n2")
+            sum = n1 + n2
+            println("La suma de ambos es: $sum")
+
+            n1 = n2
+            n2 = sum
+        }
+    }
 }
